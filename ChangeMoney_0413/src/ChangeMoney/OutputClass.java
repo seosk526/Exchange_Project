@@ -58,10 +58,10 @@ public class OutputClass {
 			saveText += tmp5;                                                                                                             // saveText에 추가
 			System.out.println(saveText);                                                                                      // 모든 변수가 추가된 saveText 출력
 		} else {
-			printErrorMessage(ConstValueClass.ERR_BALANCE_USD);                               //
-		}
-		FileStringGetter filestring = new FileStringGetter();   //
-		filestring.printSaveText(saveText);
+			printErrorMessage(ConstValueClass.ERR_BALANCE_USD);                               // 환전하는 돈보다 외환보유율이 작은 경우  
+		}                                                                                                                                                 // printErrorMessage 매서드에서 case ConstValueClass.ERR_BALANCE_USD 출력
+		FileStringGetter filestring = new FileStringGetter();                                                  // FileStringGetter Class 호출
+		filestring.printSaveText(saveText);                                                                                 // printSaveText 매서드에 인자값 saveText 넣어서 호출
 	}
 
 	public void outputResultEUR(int amount) throws Exception {

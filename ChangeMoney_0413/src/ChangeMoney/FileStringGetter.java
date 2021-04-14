@@ -20,19 +20,17 @@ public class FileStringGetter {
 	}
 	
 	public void printSaveText(String saveText) throws Exception {	
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");
-		Calendar cal = Calendar.getInstance();
-		
-		OutputStream out = new FileOutputStream("C:\\Users\\강세영\\Desktop\\Currency_Test.txt", true);
-		String str = saveText;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");  // 현재시간 나타내는 클래스 활용
+		Calendar cal = Calendar.getInstance();		
+		String str = saveText;                  
 		String str2 = sdf.format(cal.getTime()) + "\n";
 		
-		FileOutputStream outputStream = new FileOutputStream("C:\\Users\\강세영\\Desktop\\Currency_Test.txt", true);
-		byte[] strToBytes = str.getBytes();
+		FileOutputStream outputStream = new FileOutputStream("C:\\Users\\강세영\\Desktop\\Currency_Test.txt", true);   // 해당 링크에 있는 Currency_Test.txt에 내용 출력
+		byte[] strToBytes = str.getBytes();         // 출력하기 위해 byte 단위로 변환
 		byte[] str2ToBytes = str2.getBytes(); 
-		outputStream.write(strToBytes);		
+		outputStream.write(strToBytes);		     // 각 변수 출력
 		outputStream.write(str2ToBytes);
-		outputStream.close();
+		outputStream.close();                               // FileOutputStream 종료
 	}
 }
       
