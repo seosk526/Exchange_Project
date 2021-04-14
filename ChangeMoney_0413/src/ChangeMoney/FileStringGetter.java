@@ -34,23 +34,5 @@ public class FileStringGetter {
 		outputStream.write(str2ToBytes);
 		outputStream.close();
 	}
-
-	public static void main(String[] args) {
-		/*
-		 * InputStream in1 = new FileInputStream("C:\\Users\\강세영\\Desktop\\Main.txt");
-		 * OutputStream out1 = new
-		 * FileOutputStream("C:\\Users\\강세영\\Desktop\\Test_Main.txt");
-		 * 
-		 * long start = System.currentTimeMillis(); //현재시간, 실행시간 구하는 Method
-		 * 
-		 * try{ byte[] readBuffer = new byte[1024]; while (in1.read(readBuffer, 0,
-		 * readBuffer.length) != -1) { //버퍼 크기만큼 읽을 때마다 출력 스트림에 써준다.
-		 * out1.write(readBuffer); System.out.println(Arrays.toString(readBuffer)); } }
-		 * catch (Exception e) { System.out.println("파일 입출력 에러!!" + e); }
-		 * 
-		 * long end = System.currentTimeMillis(); System.out.println(end - start);
-		 * in1.close(); out1.close(); }
-		 */
-	}
 }
       

@@ -15,8 +15,7 @@ public class InputClass {
 		return korWon;                                 
 	}
 	
-	public int inputFromConsoleNumber() {
-		//Scanner sc = new Scanner(System.in);
+	public int inputFromConsoleNumber() {		
 		System.out.println("어떤 돈으로 환전하시겠습니까?\n"
 				+ "1. USD\n"
 				+ "2. EUR\n" 
